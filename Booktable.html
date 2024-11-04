@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FRANY'S RESTAURANT</title>
+    <link rel="stylesheet"href="jane.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FRANY'S RESTAURANT</h1>
+        <nav>
+            <ul>
+                <li><a href="Jane.html">Home</a></li>
+                <li><a href="Booktable.html">Book Table</a></li>
+                <li><a href="Ourmenu.html">Our Menu</a></li>
+                <li><a href="pay.html">Payment</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="booking">
+        <h1>Booking</h1>
+        <form id="bookingsForm">
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <button type="submit" >Book Now</button>
+            <a href="Table.html"></a>
+        </form>
+  
+</section>
+<footer>
+    <p>&copy; 2024 Frany's Restaurant. All rights reserved.</p>
+</footer>
+
+<script  type="module">
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyABLMS20yLoB8PuZ3gu68xggZUV8LYBNQU",
+    authDomain: "franys-restaurant.firebaseapp.com",
+    projectId: "franys-restaurant",
+    storageBucket: "franys-restaurant.appspot.com",
+    messagingSenderId: "479293515792",
+    appId: "1:479293515792:web:fe265f102573e068418295"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Initialize the Realtime Database
+  const database = firebase.database();
+
+  // Get a reference to the bookings node
+  const bookingRef = database.ref("franys-restaurant/bookings");
+
+  // Get a reference to the form
+  const bookingForm = document.getElementById('bookingsForm');
+
+  // Add a submit event listener to the form
+  bookingForm.addEventListener("submit", submitForm);
+
+  // Define the submitForm function
+  function submitForm(e) {
+    e.preventDefault();
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const guests = document.getElementById('guests').value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    console.log("mike");
+    console.log(date, time, guests, name, email, phone);
+    window.location.href = "Table.html";
+
+    // Add the booking to the Realtime Database
+    bookingRef.push({
+      date,
+      time,
+      guests,
+      name,
+      email,
+      phone
+    });
+  }
+</script>
+
+</body>
+</html>

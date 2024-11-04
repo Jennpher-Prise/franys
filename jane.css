@@ -1,0 +1,349 @@
+body, h1, h2, p, ul, li {
+    margin:0;
+     padding:0;
+   }
+  
+  body {
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: 150%;
+ }
+  
+header {
+   background-color: #a38c8c;
+   color:#3b3737;
+  padding:1rem;
+   text-align: center;
+ }
+ 
+  nav ul {
+    list-style: center;
+  }
+ nav li {
+   display: inline-block;
+  margin-right: 1rem;
+ }
+ 
+  nav li a {
+   color: #3b3737;
+   padding: 0.5rem 1rem;
+ }
+ .hero {
+    background-image: url('Premium Photo | Empty wooden table top with blurred coffee shop_.jpg');
+     background-size: 1500px;
+    background-position: cover;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    color: #a37878;
+    text-align: center;
+  }
+  
+   .btn {
+    background-color: #3b3737;
+    color: #a38c8c;
+     text-decoration: none;
+     border-radius: 50% 20% / 10% 40%;
+   }
+  
+   .about{
+    padding: 8rem;
+    background-image: url('Unknown.jpeg');
+    background-size: 1500px;
+   background-position: cover;
+   height: 50rem;
+   color:#c9b7b7;
+   }
+   .menu{
+    padding: auto;
+    background-image: url('Premium Photo | Empty wooden table top with blurred coffee shop_.jpg');
+     background-size: 1500px;
+    background-position: cover;
+    height: 55rem;
+    align-items: center;
+    justify-content: center;
+    color: #a37878;
+    text-align:center;
+   }
+
+   .booking{
+    background-image: url('Unknown.jpeg');
+     background-size: 1500px;
+    background-position: cover;
+    height: 50rem;
+    align-items: center;
+    justify-content:center;
+    color: #c9b7b7;
+    text-align:center;
+   }
+   
+   .table{
+    padding: auto;
+   }
+
+   .menu_box{
+    padding: 50px 20px;
+    background-image:url('Premium Photo | Empty wooden table top with blurred coffee shop_.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    image-resolution: from-image;
+    height: 50rem;
+    align-items: center;
+    justify-content:center;
+    color: #edf5e8;
+    text-align:center;
+   }
+   .app{
+    padding: auto;
+    background-image:url('Photo Backdrops • UK • Vinyl Photo Backdrops •  Food Photography Backdrops • Photo Backdrops UK from Capture by Lucy.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    image-resolution: from-image;
+    height: 35rem;
+    align-items: center;
+    justify-content:center;
+    color: #170202;
+    text-align:center;
+   }
+.main{
+    padding: auto;
+    background-image:url('Premium Photo | Image of burning coals in a restaurant grill.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    image-resolution: from-image;
+    height: 50rem;
+    align-items: center;
+    justify-content:center;
+    color: #e19d9d;
+    text-align:center;
+}
+.drinks{
+    padding: auto;
+    background-image:url('Download free image of Coffee mugs on a pale white and brown wooden textured background by nook about coffee iphone wallpaper, coffee background, coffee, iphone coffee, and iphone background 2448579.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    image-resolution: from-image;
+    height: 70rem;
+    align-items: center;
+    justify-content:center;
+    color: #1d0101;
+    text-align:center;
+}
+.dessert{
+    padding: auto;
+    background-image:url('Unknown-2.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    image-resolution: from-image;
+    height: 50rem;
+    align-items: center;
+    justify-content:center;
+    color: #edc5c5;
+    text-align:center;
+}
+
+   .pay_container{
+    position: absolute;
+    height: 50rem;
+    width: 100%;
+   
+   }
+    
+   .payment{
+    padding: auto;
+    background-image: url('Premium Photo | Image of burning coals in a restaurant grill.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    height: 2000px;
+    align-items: center;
+    justify-content: center;
+    color: #604b27;
+    text-align:center;
+    cursor:pointer;
+  }
+  
+   footer {
+    background-color: #333;
+    color: #fff;
+     text-align: center;
+     padding: 1rem;
+   }
+
+   .pay{
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    background-image: url('Decorative Material Hd Transparent, Bakery Decorative Material, Bakery, Egg, Slice Of Bread PNG Image For Free Download.jpg');
+    background-size: 1400px;
+    background-position: cover;
+    height: 2000px;
+    align-items: center;
+    justify-content: center;
+    color: #604b27;
+    text-align:center;
+    cursor:pointer;
+
+   }
+   .pay_footer{
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+   }
+   .footer_table{
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+     text-align: center;
+     bottom: 0rem;
+     width: 100%;
+
+   }
+   .modal {
+    position: absolute;
+    left: 15rem;
+    top: 10rem;
+
+    width: fit-content;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+    max-width: 650px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .payment--options {
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .payment--options button {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    padding: 0;
+    border: 0;
+    outline: none;
+  }
+  
+  .payment--options button svg {
+    height: 18px;
+  }
+  
+  .payment--options button:last-child svg {
+    height: 22px;
+  }
+  
+  .separator {
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    color: #8B8E98;
+    margin: 0 10px;
+  }
+  
+  .separator > p {
+    word-break: keep-all;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 11px;
+    margin: auto;
+  }
+  
+  .separator .line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #e8e8e8;
+    margin: auto;
+  }
+  
+  .credit-card-info--form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .split {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 15px;
+  }
+  
+  .split input {
+    width: 100%;
+  }
+  
+  .input_label {
+    font-size: 10px;
+    color: #8B8E98;
+    font-weight: 600;
+  }
+  
+  .input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #e5e5e500;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+  }
+  
+  .purchase--btn {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #363636 0%, #1B1B1B 50%, #000000 100%);
+    box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .purchase--btn:hover {
+    box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
+  }
+  
+  /* Reset input number styles */
+  .input_field::-webkit-outer-spin-button,
+  .input_field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .input_field[type=number] {
+  appearance: textfield;
+  }
+
+
+ 

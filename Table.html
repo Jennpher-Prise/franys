@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Bookings</title>
+    <link rel="stylesheet"href="jane.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FRANY'S RESTAURANT</h1>
+        <nav>
+            <ul>
+                <li><a href="Jane.html">Home</a></li>
+                <li><a href="Booktable.html">Book Table</a></li>
+                <li><a href="Ourmenu.html">Our Menu</a></li>
+                <li><a href="pay.html">Payment</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="bookingsList"></div>
+    <script type="module">
+        const firebaseConfig = {
+          apiKey: "AIzaSyABLMS20yLoB8PuZ3gu68xggZUV8LYBNQU",
+    authDomain: "franys-restaurant.firebaseapp.com",
+    projectId: "franys-restaurant",
+    storageBucket: "franys-restaurant.appspot.com",
+    messagingSenderId: "479293515792",
+    appId: "1:479293515792:web:fe265f102573e068418295"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        // Get a reference to the bookings node
+        const bookingRef = firebase.database().ref("franys-restaurant/bookings");
+        
+        // Get a reference to the element where you want to display bookings
+        const bookingsList = document.getElementById('bookingsList');
+
+        // Retrieve bookings from the database
+        bookingRef.on('value', (snapshot) => {
+            bookingsList.innerHTML = ''; // Clear previous data
+            snapshot.forEach((childSnapshot) => {
+                const booking = childSnapshot.val();
+                const bookingHTML = `
+                    <div>
+                        <p>Date: ${booking.date}</p>
+                        <p>Time: ${booking.time}</p>
+                        <p>Guests: ${booking.guests}</p>
+                        <p>Name: ${booking.name}</p>
+                        <p>Email: ${booking.email}</p>
+                        <p>Phone: ${booking.phone}</p>
+                    </div>
+                `;
+                bookingsList.innerHTML += bookingHTML;
+            });
+        });
+    </script>
+</body>
+</html>
