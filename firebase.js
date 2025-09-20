@@ -2,14 +2,17 @@
   import firebase from './node_modules/firebase/app';
   import 'firebase/database';
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyABLMS20yLoB8PuZ3gu68xggZUV8LYBNQU",
-    authDomain: "franys-restaurant.firebaseapp.com",
-    projectId: "franys-restaurant",
-    storageBucket: "franys-restaurant.appspot.com",
-    messagingSenderId: "479293515792",
-    appId: "1:479293515792:web:fe265f102573e068418295"
+ const firebaseConfig = {
+      apiKey: "AIzaSyBQNcOsw4ibWdmRHbXanCZNle7XMoaYSkg",
+      authDomain: "frany-s-restaurant.firebaseapp.com",
+      databaseURL: "https://frany-s-restaurant-default-rtdb.firebaseio.com",
+      projectId: "frany-s-restaurant",
+      storageBucket: "frany-s-restaurant.firebasestorage.app",
+      messagingSenderId: "564213108953",
+      appId: "1:564213108953:web:2b5b5a8712e8a325daeec8",
+      measurementId: "G-19LBGJJD6B"
   };
+
 
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
