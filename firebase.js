@@ -39,7 +39,7 @@
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
 
-    console.log("mike");
+    console.log("prise");
     console.log(date, time, guests, name, email, phone);
 
     // Add the booking to the Realtime Database
